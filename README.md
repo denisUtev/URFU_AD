@@ -41,7 +41,31 @@ print("Hello World")
 Ход работы:
 - Написать программу Hello World на C# с запуском на Unity. 
 
-[Ссылка на проект в Unity в репозитории](HelloWorld/)
+[Ссылка на скрин в Unity в репозитории](helloWorldUnity.png)
+
+```C#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Destroy : MonoBehaviour
+{
+    public GameObject obj;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Space)) {
+            Destroy(obj);
+        }
+    }
+}
+```
 
 
 ## Задание 3
